@@ -58,6 +58,7 @@
             window.onload = function () {
                 loadImages()
                 window.addEventListener('scroll', throttle(loadImages, 500, 1000), false)
+                // throttle(loadImages, 500, 1000) 的意思是 loadImages 函数至少 1500 ms 内执行一次，至多 500 ms 内执行一次
             }
         </script>
     </body>
